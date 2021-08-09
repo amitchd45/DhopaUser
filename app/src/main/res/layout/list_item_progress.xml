@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingHorizontal="@dimen/space10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_alignParentLeft="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Dhopa Laundry Service"
+                 android:textStyle="bold"
+                 style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$434"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingHorizontal="@dimen/space10"
+            android:layout_marginVertical="@dimen/space10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order No : 1120986654"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmed"
+                android:layout_alignParentRight="true"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginVertical="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space1"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:padding="@dimen/space8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_confirm"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_confirmation"/>
+
+                <TextView
+                    android:layout_marginVertical="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text12"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delivery_truck1"/>
+
+                <TextView
+                    android:layout_marginVertical="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Picked Up"
+                    android:textSize="@dimen/text12"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_washing_machine"/>
+
+                <TextView
+                    android:layout_marginVertical="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Process"
+                    android:textSize="@dimen/text12"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_box"/>
+
+                <TextView
+                    android:layout_marginVertical="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipped"
+                    android:textSize="@dimen/text12"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delivery"/>
+
+                <TextView
+                    android:layout_marginVertical="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textSize="@dimen/text12"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

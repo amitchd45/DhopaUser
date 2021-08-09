@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.fragments.PinYourLocationFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space20"
+        app:cardCornerRadius="@dimen/space4">
+
+        <TextView
+            android:id="@+id/et_location_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:hint="Search"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/dp_5"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <fragment
+        android:id="@+id/map_home1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.fragments.PinYourLocationFragment" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="@dimen/space100"
+        android:layout_height="@dimen/space100"
+        android:src="@drawable/pin"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCurrentLocation"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_my_location_24"
+        android:tint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/space16"/>
+
+    <Button
+        android:id="@+id/btnSetAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Address"
+        android:paddingHorizontal="@dimen/space15"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/space16"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"/>
+
+</RelativeLayout>

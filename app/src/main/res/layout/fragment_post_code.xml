@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragments.PostCodeFragment">
+<!--    <include layout="@layout/post_code_address_bar"/>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@id/rl_go"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="@dimen/space15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/appColor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Perfect Move"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collection address or postcode"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:hint="Chandigarh"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:background="@android:color/transparent"
+                    android:paddingHorizontal="@dimen/space10"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:paddingVertical="@dimen/space10"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 2"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 3"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space20"
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery address or postcode"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:hint="Mohali"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:background="@android:color/transparent"
+                    android:paddingHorizontal="@dimen/space10"
+                    android:paddingVertical="@dimen/space10"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 2"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_baseline_cancel_presentation_24"
+                    android:layout_height="wrap_content"
+                    android:text="Address 3"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableLeft="@drawable/ic_baseline_history_24"
+                    android:drawableTint="@android:color/holo_blue_bright"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rl_go"
+        android:background="@drawable/button_bg"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/space200"
+        android:layout_height="@dimen/space50"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginBottom="@dimen/space20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:textSize="@dimen/text20"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/space7"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle01"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

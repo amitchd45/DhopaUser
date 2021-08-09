@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainFragment"
+            android:title="@string/home"
+            android:visible="false"/>
+        <item
+            android:id="@+id/orderListFragment"
+            android:icon="@drawable/ic_shopping_bag"
+            android:title="@string/my_order" />
+        <item
+            android:visible="false"
+            android:id="@+id/cartFragment"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="@string/cart" />
+
+        <item
+            android:id="@+id/walletFragment"
+            android:icon="@drawable/ic_walle"
+            android:title="@string/wallet" />
+
+        <item
+            android:id="@+id/trackingServiceFragment"
+            android:icon="@drawable/ic_pin"
+            android:title="@string/live_tracking" />
+        <item
+            android:id="@+id/chatFragment"
+            android:icon="@drawable/ic_chatting"
+            android:title="@string/chat" />
+
+        <item
+            android:id="@+id/priceListFragment"
+            android:icon="@drawable/ic_baseline_price_change_24"
+            android:title="@string/price_list" />
+
+        <item
+            android:id="@+id/paymentHistoryFragment"
+            android:icon="@drawable/ic_history"
+            android:title="@string/payment" />
+
+        <item
+            android:id="@+id/termAndConditionsFragment"
+            android:icon="@drawable/ic_terms_and_conditions"
+            android:title="@string/term_and_condition" />
+
+        <item
+            android:id="@+id/helpFragment"
+            android:icon="@drawable/ic_information"
+            android:title="@string/help" />
+
+        <item
+            android:id="@+id/kjg"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

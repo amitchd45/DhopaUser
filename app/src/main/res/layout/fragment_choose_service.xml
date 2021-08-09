@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pageBg"
+    tools:context=".cart.fragments.ChooseServiceFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="invisible"
+        android:layout_above="@id/btnNext"
+        android:layout_marginTop="@dimen/space10"
+        android:id="@+id/rv_top_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/list_item_choose_services"/>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_circular"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/space30"
+        android:layout_marginVertical="@dimen/space10"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pageBg"
+    tools:context=".profile.fragment.MyAddressesFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space15"
+        android:layout_marginVertical="@dimen/space20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="3"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/list_address_item"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:padding="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:clickable="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_office"/>
+
+                <ImageView
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rb_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_office_building"
+                    android:id="@+id/iv_building"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/space10"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_edit"
+                    android:layout_toRightOf="@id/iv_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:text="Send to"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:text="My Office"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:id="@+id/rb_office1"/>
+
+                <ImageView
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rb_office1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_1"
+                    android:id="@+id/iv_building1"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/space10"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_edit1"
+                    android:layout_toRightOf="@id/iv_building1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:text="Send to"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:text="My Office"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:id="@+id/rb_office11"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rb_office11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_1"
+                    android:id="@+id/iv_building11"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/space10"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_edit11"
+                    android:layout_toRightOf="@id/iv_building11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:text="Jot Bhullar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:text="@string/complete_address"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_edit11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New DELIVERY ADDRESSES"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space20"/>
+
+</RelativeLayout>

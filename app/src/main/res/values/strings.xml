@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Dhopa</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_passwrd">Password</string>
+    <string name="hint_password">Password</string>
+    <string name="forget_pass">Forgot Password ?</string>
+    <string name="or_login_with">Or login with</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="register"><u>Register</u></string>
+    <string name="hint_user">User</string>
+    <string name="hint_phone_no">Phone Number</string>
+    <string name="hint_conform_passwrd">Confirm Password</string>
+    <string name="condition_note"><![CDATA[I accept the Dhopa Terms of Use & Privacy Policy]]></string>
+    <string name="verification">Verification</string>
+    <string name="msg_note">A verification code has been sent to the phone\nnumber +911234567890. Please\nenter the code below.</string>
+    <string name="enter_otp_note">Enter Your Verification Code</string>
+    <string name="congo">Congratulations</string>
+    <string name="verify_note">Your Profile is\nSuccessfully Verified.</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="login">Login</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Email</string>
+    <string name="nav_header_subtitle">amit@gmail.com</string>
+    <string name="menu_home">Home</string>
+    <string name="home">Home</string>
+    <string name="post_code">Postcode</string>
+    <string name="booking">Booking</string>
+    <string name="profile">Profile</string>
+    <string name="offers">Offers</string>
+    <string name="your_location">Your Location</string>
+    <string name="my_order">MY ORDERS</string>
+    <string name="cart">CART</string>
+    <string name="wallet">WALLET</string>
+    <string name="live_tracking">LIVE TRACKING</string>
+    <string name="chat">CHAT</string>
+    <string name="payment">PAYMENT HISTORY</string>
+    <string name="term_and_condition"><![CDATA[TERM & CONDITIONS]]></string>
+    <string name="help">HELP</string>
+    <string name="logout">LOGOUT</string>
+    <string name="price_list">PRICE LIST</string>
+    <string name="select_area">Select Area</string>
+    <string name="complete_address">Complete Address</string>
+    <string name="pin_your_location"><u>Pin Your Location</u></string>
+    <string name="text_address">Plot no E : 216, First Floor, Mohali Phase 8b,Industrial Area Mohali,Sector 74, Punjab 160055</string>
+    <string name="contact">Contact No</string>
+    <string name="book_now">Book Now</string>
+    <string name="add_address">Add Address</string>
+    <string name="account_info">Account Info</string>
+    <string name="refer"><![CDATA[Refer & Earn]]></string>
+    <string name="notification">App Notification</string>
+    <string name="settings">Settings</string>
+    <string name="signOut">Sign Out</string>
+    <string name="my_address">My Address</string>
+    <string name="change_password">Change Password</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="coming_soon">coming soon...</string>
+    <string name="order_no_11009364e34">Order No : 11009364e34</string>
+    <string name="date_time">Wed, 04 Apr 2021, 11:30 AM</string>
+    <string name="date_time_bt">Wed, 04 Apr 2021, 11:30 AM - 12:30 AM</string>
+    <string name="view_details"><u>View Details</u></string>
+    <string name="dialogTitle">Logout</string>
+    <string name="dialogMessage">Do you want logout ?</string>
+
+    <string name="default_lat">00.000000</string>
+    <string name="default_lng">00.000000</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="required_for_this_app">Required for this app</string>
+    <string name="enable_now">Enable Now</string>
+    <string name="location_permission_not_granted">Location Permission not granted</string>
+
+    <string name="facebook_app_id">1512343082430573</string>
+    <string name="fb_login_protocol_scheme">fb1512343082430573</string>
+<!--    <string name="map_key">AIzaSyALNy9nniHiAZ7DdBGo2pUY4_Bitak7q4g</string>-->
+    <string name="map_key">AIzaSyBu8Q4AXbRQX3rVHA_cXk89d4CWldDwG8c</string>
+
+
+</resources>

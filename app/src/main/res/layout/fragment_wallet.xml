@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sidemenu.fragments.WalletFragment">
+
+    <RelativeLayout
+        android:background="@color/pageBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space20">
+
+                <LinearLayout
+                    android:padding="@dimen/space15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_walle"
+                            android:id="@+id/iv_wallet"
+                            app:tint="@color/appColor" />
+
+                        <LinearLayout
+                            android:layout_toLeftOf="@id/btnTopUp"
+                            android:layout_marginLeft="@dimen/space15"
+                            android:layout_toRightOf="@id/iv_wallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wallet Balance"
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wallet Balance"
+                                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnTopUp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space30"
+                            android:textColor="@color/appColor"
+                            android:text="Yop Up"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:background="@drawable/rac06"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/space15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:textStyle="bold"
+                            android:id="@+id/iv_wallet1"
+                            app:tint="@color/appColor" />
+
+                        <LinearLayout
+                            android:layout_toLeftOf="@id/btnWithdraw"
+                            android:layout_marginLeft="@dimen/space8"
+                            android:layout_toRightOf="@id/iv_wallet1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234.25"
+                                android:textColor="@color/appColor"
+                                style="@style/TextAppearance.MaterialComponents.Headline4"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnWithdraw"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space30"
+                            android:textColor="@color/white"
+                            android:text="Withdraw"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:background="@drawable/rac07"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="@dimen/dp_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/iv_receive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingVertical="@dimen/space15"
+                                android:paddingHorizontal="@dimen/space6"
+                                android:background="@drawable/rac05"
+                                android:layout_margin="@dimen/space4"
+                                android:src="@drawable/ic_baseline_arrow_downward_24"/>
+
+                            <LinearLayout
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/iv_receive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    style="@style/TextAppearance.MaterialComponents.Body1"
+                                    android:text="Receive"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:text="$120.00"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="@dimen/dp_10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_margin="@dimen/space4"
+                                android:id="@+id/iv_transfer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingVertical="@dimen/space15"
+                                android:paddingHorizontal="@dimen/space6"
+                                android:background="@drawable/rac04"
+                                android:src="@drawable/ic_baseline_arrow_upward_24"/>
+
+                            <LinearLayout
+                                android:paddingLeft="@dimen/dp_5"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/iv_transfer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    style="@style/TextAppearance.MaterialComponents.Body1"
+                                    android:text="Transfer"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:text="$120.00"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_margin="@dimen/space10"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_transaction"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/list_item_today_transaction"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@id/mainFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.MainFragment"
+        android:label="Hi, AMiT"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_easeToStartFragment"
+            app:destination="@id/easeToStartFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/postCodeFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.PostCodeFragment"
+        android:label="Address"
+        tools:layout="@layout/fragment_post_code" >
+        <action
+            android:id="@+id/action_postCodeFragment_to_placeYourOrderFragment"
+            app:destination="@id/placeYourOrderFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeYourOrderFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.PlaceYourOrderFragment"
+        android:label="Address"
+        tools:layout="@layout/fragment_place_your_order" >
+        <action
+            android:id="@+id/action_placeYourOrderFragment_to_officeHomeDetailsFragment"
+            app:destination="@id/officeHomeDetailsFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/officeHomeDetailsFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.OfficeHomeDetailsFragment"
+        android:label="Address"
+        tools:layout="@layout/fragment_office_home_details" >
+        <action
+            android:id="@+id/action_officeHomeDetailsFragment_to_pinYourLocationFragment"
+            app:destination="@id/pinYourLocationFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_officeHomeDetailsFragment_to_schedulePickUpFragment"
+            app:destination="@id/schedulePickUpFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinYourLocationFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.PinYourLocationFragment"
+        android:label="Pin Your Location"
+        tools:layout="@layout/fragment_pin_your_location" />
+    <fragment
+        android:id="@+id/schedulePickUpFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.SchedulePickUpFragment"
+        android:label="Collection &amp; Delivery"
+        tools:layout="@layout/fragment_schedule_pick_up" >
+        <action
+            android:id="@+id/action_schedulePickUpFragment_to_schedulePickUpDateTimeFragment"
+            app:destination="@id/schedulePickUpDateTimeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_schedulePickUpFragment_to_addressFieldFragment"
+            app:destination="@id/addressFieldFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedulePickUpDateTimeFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.SchedulePickUpDateTimeFragment"
+        android:label="Collection &amp; Delivery"
+        tools:layout="@layout/fragment_schedule_pick_up_date_time" >
+        <action
+            android:id="@+id/action_schedulePickUpDateTimeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@id/profileFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_referAndEarnFragment"
+            app:destination="@id/referAndEarnFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_accountInfoFragment"
+            app:destination="@id/accountInfoFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_myAddressesFragment"
+            app:destination="@id/myAddressesFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_reportFeedbackFragment"
+            app:destination="@id/reportFeedbackFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@id/myOrderFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.MyOrderFragment"
+        android:label="My Order"
+        tools:layout="@layout/fragment_my_order" />
+    <fragment
+        android:id="@id/cartFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@id/walletFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@id/liveTrackingFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.LiveTrackingFragment"
+        android:label="Live Tracking"
+        tools:layout="@layout/fragment_live_tracking" />
+    <fragment
+        android:id="@id/chatFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@id/paymentHistoryFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.PaymentHistoryFragment"
+        android:label="Payment History"
+        tools:layout="@layout/fragment_payment_history" />
+    <fragment
+        android:id="@id/termAndConditionsFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.TermAndConditionsFragment"
+        android:label="Term Conditions"
+        tools:layout="@layout/fragment_term_and_conditions" />
+    <fragment
+        android:id="@id/helpFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@id/priceListFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.PriceListFragment"
+        android:label="Price List"
+        tools:layout="@layout/fragment_price_list" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_puckupConformationFragment"
+            app:destination="@id/puckupConformationFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/puckupConformationFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.PuckupConformationFragment"
+        android:label="PickUp Confirm"
+        tools:layout="@layout/fragment_puckup_conformation" />
+    <fragment
+        android:id="@+id/referAndEarnFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.ReferAndEarnFragment"
+        android:label="Refer and earn"
+        tools:layout="@layout/fragment_refer_and_earn" />
+    <fragment
+        android:id="@id/bookingServicesFragment"
+        android:name="com.dhopa.dhopaservice.service_booking.fragments.BookingServicesFragment"
+        android:label="Booking"
+        tools:layout="@layout/fragment_booking_services" />
+    <fragment
+        android:id="@id/offersFragment"
+        android:name="com.dhopa.dhopaservice.home.fragments.OffersFragment"
+        android:label="Offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/accountInfoFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.AccountInfoFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_account_info" />
+    <fragment
+        android:id="@id/orderListFragment"
+        android:name="com.dhopa.dhopaservice.service_booking.fragments.OrderListFragment"
+        android:label="Order List"
+        tools:layout="@layout/fragment_order_list" >
+        <action
+            android:id="@+id/action_orderListFragment_to_myOrderFragment"
+            app:destination="@+id/myOrderFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.CreatePasswordFragment"
+        android:label="Create Password"
+        tools:layout="@layout/fragment_create_password" />
+    <fragment
+        android:id="@+id/myAddressesFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.MyAddressesFragment"
+        android:label="My Addresses"
+        tools:layout="@layout/fragment_my_addresses" >
+        <action
+            android:id="@+id/action_myAddressesFragment_to_addressFieldFragment"
+            app:destination="@id/addressFieldFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFeedbackFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.ReportFeedbackFragment"
+        android:label="fragment_report_feedback"
+        tools:layout="@layout/fragment_report_feedback" />
+    <fragment
+        android:id="@id/trackingServiceFragment"
+        android:name="com.dhopa.dhopaservice.sidemenu.fragments.TrackingServiceFragment"
+        android:label="Live Tracking"
+        tools:layout="@layout/fragment_tracking_service" >
+        <action
+            android:id="@+id/action_trackingServiceFragment_to_liveTrackingFragment"
+            app:destination="@+id/liveTrackingFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/easeToStartFragment"
+        android:name="com.dhopa.dhopaservice.cart.fragments.EaseToStartFragment"
+        android:label="Schedule Collections"
+        tools:layout="@layout/fragment_ease_to_start" >
+        <action
+            android:id="@+id/action_easeToStartFragment_to_chooseServiceFragment"
+            app:destination="@id/chooseServiceFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseServiceFragment"
+        android:name="com.dhopa.dhopaservice.cart.fragments.ChooseServiceFragment"
+        android:label="Choose Services"
+        tools:layout="@layout/fragment_choose_service" >
+        <action
+            android:id="@+id/action_chooseServiceFragment_to_postCodeFragment"
+            app:destination="@id/postCodeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_chooseServiceFragment_to_officeHomeDetailsFragment"
+            app:destination="@id/officeHomeDetailsFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFieldFragment"
+        android:name="com.dhopa.dhopaservice.profile.fragment.AddressFieldFragment"
+        android:label="fragment_address_field"
+        tools:layout="@layout/fragment_address_field" />
+</navigation>

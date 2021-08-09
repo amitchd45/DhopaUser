@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space10">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingHorizontal="@dimen/space10"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$434"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="@dimen/space10"
+            android:layout_marginVertical="@dimen/space10"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get $50 additional discount"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid on order above Rs 200"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <Button
+                android:layout_marginVertical="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space40"
+                android:paddingHorizontal="@dimen/space15"
+                android:text="SUPMH34GD"
+                android:background="@drawable/dotted_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to coupon to copy code"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space10">
+
+
+    <LinearLayout
+        android:padding="@dimen/space15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mastercard"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                android:layout_alignParentRight="true"
+                android:tint="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_user"
+                android:layout_width="@dimen/space50"
+                android:layout_height="@dimen/space50"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/dp_5"
+                android:layout_toRightOf="@id/iv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/space40"
+                    android:layout_height="@dimen/space40"
+                    android:src="@drawable/wash"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_toLeftOf="@id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wash &amp; Fold"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$95.00"
+                        android:layout_alignParentRight="true"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem Ipsum"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_toLeftOf="@id/tv_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AUS 01 ML 7777"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                    <TextView
+                        android:id="@+id/tv_date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="April 17, 11:00 AM"
+                        android:layout_alignParentRight="true"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

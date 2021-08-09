@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "648008987292",
+    "project_id": "dhopa-e3dda",
+    "storage_bucket": "dhopa-e3dda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648008987292:android:3659b63b0d6a857acb3359",
+        "android_client_info": {
+          "package_name": "com.dhopa.dhopaservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648008987292-31cgbl8v0tfqg9sljkr20586816k8f5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhopa.dhopaservice",
+            "certificate_hash": "eadaf697e75e098ce898944299762a642ecb36ed"
+          }
+        },
+        {
+          "client_id": "648008987292-k4iompf0ps1e5brbfkv6q6sq7rvnativ.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9UK-q1nvdb5VQlonLi_iC6XBvLhKNlFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648008987292-k4iompf0ps1e5brbfkv6q6sq7rvnativ.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

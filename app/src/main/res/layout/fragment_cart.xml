@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sidemenu.fragments.CartFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pageBg"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card2"
+                    android:layout_margin="@dimen/space10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space10">
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/space10">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_truck1"
+                                android:layout_width="@dimen/space80"
+                                android:layout_height="@dimen/space80"
+                                android:background="@drawable/circle02"
+                                android:padding="@dimen/space10"
+                                android:src="@drawable/ic_delivery_truck" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/iv_truck1"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/space8">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Body1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dhopa Laundry"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tdi business centre market, Sahibzada Ajit Singh Nagar, Punjab 160050"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <TextView
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space10"
+                        android:text="Washup &amp; Fold" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Men's"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space10"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_up_24" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_down_24"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_remove"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="T-Shirt" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:padding="@dimen/space8"
+                                    android:text="0" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_remove"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_remove1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="Shirt" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_remove1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:padding="@dimen/space8"
+                                    android:text="2" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_remove1"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_remove2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="Jeans" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_remove2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:padding="@dimen/space8"
+                                    android:text="5" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_remove2"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <!--Woman layout-->
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Women's"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space10"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_up_24" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_down_24"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_removeW"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="T-Shirt" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_removeW"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    android:padding="@dimen/space8"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:text="0" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_removeW"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_remove1W"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="Shirt" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_remove1W"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    android:padding="@dimen/space8"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:text="2" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_remove1W"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/ll_add_remove2W"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="Jeans" />
+
+                                <TextView
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/space1"
+                                    android:text="$5.00" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_remove2W"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_remove" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="3"
+                                    style="@style/TextAppearance.MaterialComponents.Caption"
+                                    android:padding="@dimen/space8"
+                                    android:text="5" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:padding="@dimen/space8"
+                                    android:src="@drawable/ic_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/ll_add_remove2W"
+                                android:gravity="right"
+                                android:padding="@dimen/space1"
+                                android:text="$5.00"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Washup &amp; Fold"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_up_24" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_down_24"-->
+                        <!--                        android:visibility="invisible" />-->
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="SubTotal"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$60.00"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="Tax" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$20.25" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Total"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$80.25"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space10"
+                        android:text="Washup &amp; Fold" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Men's"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space10"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_up_24" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_down_24"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:layout_marginVertical="8dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Women's"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/space10"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_up_24" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:src="@drawable/ic_arrow_down_24"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Washup &amp; Fold"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_up_24" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_down_24"-->
+                        <!--                        android:visibility="invisible" />-->
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="SubTotal"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$60.00"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="Tax" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$20.25" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Total"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$80.25"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Apply Coupon"
+                                android:drawableLeft="@drawable/sale"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <EditText
+                                android:layout_toLeftOf="@+id/tv_apply"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter here"/>
+
+                            <TextView
+                                android:id="@+id/tv_apply"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apply"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/holo_blue_dark"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(man)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Washup &amp; Fold"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_up_24" />-->
+
+                        <!--                    <ImageButton-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:background="@null"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:src="@drawable/ic_arrow_down_24"-->
+                        <!--                        android:visibility="invisible" />-->
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x T-shirt-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="5 x Trouser-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="2 x Jeans-(woman)" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$10.00" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="SubTotal"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$60.00"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="Tax" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Caption"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:paddingHorizontal="@dimen/space10"-->
+                        <!--                        android:paddingVertical="@dimen/space4"-->
+                        <!--                        android:text="$20.25" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+                        <!--                <View-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="@dimen/space1"-->
+                        <!--                    android:layout_marginVertical="8dp"-->
+                        <!--                    android:background="@android:color/darker_gray" />-->
+
+                        <!--                <RelativeLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content">-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="Total"-->
+                        <!--                        android:textStyle="bold" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        style="@style/TextAppearance.MaterialComponents.Body1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_marginRight="@dimen/space10"-->
+                        <!--                        android:padding="@dimen/space10"-->
+                        <!--                        android:text="$80.25"-->
+                        <!--                        android:textStyle="bold" />-->
+
+
+                        <!--                </RelativeLayout>-->
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space10">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/dp_5">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/space1"
+                                android:text="Add Special Instructions"
+                                android:drawableLeft="@drawable/ic_report"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/bucket_details_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

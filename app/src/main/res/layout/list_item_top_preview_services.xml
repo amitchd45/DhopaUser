@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space4"
+        app:cardCornerRadius="@dimen/space4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/space10"
+                android:id="@+id/iv_service_image"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/space110"
+                android:layout_height="@dimen/space110"
+                android:src="@drawable/laundry1"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:paddingHorizontal="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhopa Laundry"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.0"
+                    android:drawableTint="@android:color/holo_orange_dark"
+                    android:drawablePadding="@dimen/space4"
+                    android:drawableLeft="@drawable/ic_rating"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginBottom="@dimen/space10"
+                android:paddingHorizontal="@dimen/space10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1810 Camino Real, Redwood,"
+                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

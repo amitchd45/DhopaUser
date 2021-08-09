@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    tools:context=".profile.fragment.AddressFieldFragment">
+
+    <LinearLayout
+        android:layout_above="@id/btn_save"
+        android:padding="@dimen/space15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_postalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter postal code"
+            android:background="@drawable/rac01"
+            android:padding="@dimen/space10"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/space8"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/rac01">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/et_address_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address line1"
+            android:background="@drawable/rac01"
+            android:padding="@dimen/space10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/space8"/>
+
+        <EditText
+            android:id="@+id/et_address_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address line2(optional*)"
+            android:background="@drawable/rac01"
+            android:padding="@dimen/space10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/space8"/>
+
+        <EditText
+            android:id="@+id/et_city_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Town / City"
+            android:background="@drawable/rac01"
+            android:padding="@dimen/space10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/space8"/>
+
+        <EditText
+            android:id="@+id/et_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:background="@drawable/rac01"
+            android:padding="@dimen/space10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/space8"/>
+        <RadioGroup
+            android:id="@+id/radioBtn_group"
+            android:layout_marginTop="@dimen/space8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/radioBtn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/radioBtn_office"
+                android:layout_marginHorizontal="@dimen/space8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/radioBtn_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/text20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg1"/>
+
+</RelativeLayout>

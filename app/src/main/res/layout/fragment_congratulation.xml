@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".loginRegister.fragments.CongratulationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/space8"
+                    android:layout_margin="@dimen/space15">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="@dimen/space5"
+                        android:layout_marginBottom="@dimen/space40"
+                        android:padding="@dimen/space15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/space120"
+                            android:layout_height="@dimen/space120"
+                            android:layout_gravity="center"
+                            android:src="@drawable/box"/>
+
+
+
+                        <TextView
+                            android:layout_marginTop="@dimen/space20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/congo"
+                            style="@style/textMedium"
+                            android:layout_gravity="center"
+                            android:textColor="@color/appColor"
+                            android:textSize="@dimen/text16"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/space20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/verify_note"
+                            style="@style/textMedium"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text16"/>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:elevation="@dimen/space2"
+                    android:layout_marginTop="-42dp"
+                    android:layout_below="@id/cv_main"
+                    android:layout_marginRight="@dimen/space50"
+                    android:layout_marginLeft="@dimen/space50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="Done"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

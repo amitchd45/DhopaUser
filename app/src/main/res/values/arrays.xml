@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area_list">
+        <item>Chandigarh</item>
+        <item>Mohali</item>
+        <item>Punjab</item>
+        <item>Delhi</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="pickup_time">
+        <item>Select time</item>
+        <item>10:00 AM - 02:00 PM</item>
+        <item>11:00 AM - 03:00 PM</item>
+        <item>11:30 AM - 02:00 PM</item>
+        <item>11:40 AM - 03:00 PM</item>
+        <item>11:00 AM - 04:00 PM</item>
+    </string-array>
+
+    <string-array name="deliver_time">
+        <item>Select time</item>
+        <item>11:00 AM - 02:00 PM</item>
+        <item>11:20 AM - 03:00 PM</item>
+        <item>11:30 AM - 02:00 PM</item>
+        <item>11:40 AM - 03:00 PM</item>
+        <item>11:00 AM - 04:00 PM</item>
+    </string-array>
+</resources>

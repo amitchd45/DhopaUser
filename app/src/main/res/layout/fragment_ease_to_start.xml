@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pageBg"
+    tools:context=".cart.fragments.EaseToStartFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/space4"
+        android:layout_margin="@dimen/space10">
+
+        <LinearLayout
+            android:background="@drawable/rac08"
+            android:padding="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy to start"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_favorite_24"
+                android:drawablePadding="@dimen/space5"
+                android:drawableTint="@android:color/holo_blue_light"/>
+
+
+            <TextView
+                android:layout_marginVertical="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contactless delivery and high-temperature wash available"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:drawablePadding="@dimen/space5"
+                android:drawableTint="@android:color/holo_green_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No need to sign on driver device"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:drawablePadding="@dimen/space5"
+                android:drawableTint="@android:color/holo_green_dark"/>
+            <TextView
+                android:layout_marginVertical="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 200 minimum order"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:drawablePadding="@dimen/space5"
+                android:drawableTint="@android:color/holo_green_dark"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_washer"
+        android:layout_centerInParent="true"/>
+
+
+
+    <TextView
+        android:layout_above="@id/btnSchedule"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to start?"
+        style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+    <Button
+        android:id="@+id/btnSchedule"
+        android:layout_margin="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule a Collection"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

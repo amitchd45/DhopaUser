@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sidemenu.fragments.OrderProcessingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="@dimen/space15"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="@dimen/space100"
+                android:layout_height="@dimen/space100"
+                android:src="@drawable/userimage"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Omninos Solution"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/space15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhopa Package"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/space8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price : $ 170.00"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_address"
+                android:drawableLeft="@drawable/ic_pin_16dp"
+                android:drawableTint="@color/appColor"
+                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:padding="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Status"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <com.badoualy.stepperindicator.StepperIndicator
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:stpi_showLabels="true"
+                app:stpi_stepCount="4"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrderDetails"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Order Details"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/space30"
+        android:layout_marginVertical="@dimen/space15"/>
+
+</RelativeLayout>

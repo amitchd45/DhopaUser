@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_marginVertical="@dimen/space5"
+        app:cardCornerRadius="@dimen/space4">
+        <LinearLayout
+            android:background="@drawable/rac08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:paddingLeft="@dimen/space30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_service_image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/space70"
+                    android:layout_height="@dimen/space70"
+                    android:src="@drawable/ic_washing_machine"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_service_image"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/dp_5"/>
+
+                <RadioButton
+                    android:id="@+id/rb_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space10"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/space35"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Everyday laundry as well as towels, sheets and duvet covers, Washed and tumble=dried, no ironing."/>
+
+            <TextView
+                android:layout_marginBottom="@dimen/space10"
+                android:layout_marginTop="@dimen/space8"
+                android:layout_marginRight="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priced per weight , no upper weight limit Rs 500 per each 6kg"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/space35"/>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

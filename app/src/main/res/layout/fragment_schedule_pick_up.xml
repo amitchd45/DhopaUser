@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    tools:context=".home.fragments.SchedulePickUpFragment">
+
+    <LinearLayout
+        android:layout_above="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space100"
+            android:background="@color/white">
+
+            <View
+                android:layout_marginHorizontal="@dimen/space40"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/space15"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pin_16dp"
+                        android:background="@drawable/round02"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="@color/appColor"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/space15"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_timetable"
+                        android:background="@drawable/round03_gray"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date / Time"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/space15"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_payment"
+                        android:background="@drawable/round03_gray"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/space15"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_mark"
+                        android:background="@drawable/round03_gray"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complete"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="@dimen/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where should we deliver?"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/space4"
+                android:layout_margin="@dimen/space2">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="3"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/list_address_item1"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/space4"
+                android:layout_margin="@dimen/space2">
+
+                <LinearLayout
+                    android:padding="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home"
+                            android:checked="true"/>
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_more"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_address"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/space4"
+                android:layout_margin="@dimen/space2">
+
+                <LinearLayout
+                    android:padding="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Work"
+                            android:checked="true"/>
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_more"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_address"
+                        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/space4"
+                android:layout_marginVertical="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space2">
+
+                <LinearLayout
+                    android:id="@+id/LL_addAddress"
+                    android:padding="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="@dimen/space10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_address"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:background="@drawable/button_bg"
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Address &amp; Continue"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space20"/>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    tools:context=".home.fragments.OfficeHomeDetailsFragment">
+
+    <RelativeLayout
+        android:padding="@dimen/space20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Location"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+            
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space20"
+                android:paddingVertical="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rac08">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_location"/>
+                
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complete_address"
+                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                
+                <TextView
+                    android:id="@+id/tv_pinLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change address"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_alignParentRight="true"
+                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+                
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_full_address"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <EditText
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add apartment no, floor..."
+                android:background="@drawable/rac08"
+                android:padding="@dimen/space10"/>
+
+            <EditText
+                android:id="@+id/et_fullName"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="full Name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:background="@drawable/rac08"
+                android:padding="@dimen/space10"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="@drawable/rac08"
+                android:padding="@dimen/space10"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:background="@drawable/rac08"
+                android:padding="@dimen/space10"/>
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="@dimen/space20"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/contact"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Body1"/>-->
+
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="@dimen/space10"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="+919876543210"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                style="@style/TextAppearance.MaterialComponents.Body1"/>-->
+            
+            <RadioGroup
+                android:layout_marginTop="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"/>
+                
+                <RadioButton
+                    android:id="@+id/rb_office"
+                    android:layout_marginLeft="@dimen/space30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Office"/>
+
+                <RadioButton
+                    android:id="@+id/rb_hotel"
+                    android:layout_marginLeft="@dimen/space30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel"/>
+                
+            </RadioGroup>
+            
+            <com.google.android.material.button.MaterialButton
+                android:background="@drawable/button_bg"
+                android:id="@+id/btn_bookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_now"
+                android:layout_margin="@dimen/space20"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

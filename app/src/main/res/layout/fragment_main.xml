@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.fragments.MainFragment">
+
+    <RelativeLayout
+        android:background="@color/pageBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:padding="@dimen/space15"
+        android:orientation="vertical">
+
+<!--        <include layout="@layout/address_bar"/>-->
+
+        <RelativeLayout
+            android:paddingVertical="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_go"
+                android:background="@drawable/button_bg1"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Today here"
+                    android:textSize="@dimen/text20"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/appColor"/>
+
+                <ImageView
+                    android:layout_marginRight="@dimen/space7"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle011"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_forward_24"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_5"
+                android:hint="Search laundry shop by name..."
+                android:drawableLeft="@drawable/ic_search"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/space10"
+                android:paddingVertical="@dimen/space10"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/rl_layout"
+        android:id="@+id/ll_layout1"
+        android:padding="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Services"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+        </RelativeLayout>
+
+<!--        <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--            android:id="@+id/shimmerFrameLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <include layout="@layout/shimmer_placeholder_layout_home" />-->
+
+<!--            </LinearLayout>-->
+<!--        </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/space10"
+            android:id="@+id/rv_top_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="4"
+            tools:listitem="@layout/list_item_top_services"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/ll_layout1"
+        android:id="@+id/ll_layout2"
+        android:padding="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhopa Reviews"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/space10"
+            android:id="@+id/rv_top_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/list_item_top_preview_services"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

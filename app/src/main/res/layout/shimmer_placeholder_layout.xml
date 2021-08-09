@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space100"
+        android:background="@color/appColor">
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/space60"
+                android:layout_height="@dimen/space60"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amit Android"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chandigarh, mohali,"
+                    android:drawableLeft="@drawable/ic_pin_12dp"
+                    android:drawableTint="@color/white"
+                    android:drawablePadding="@dimen/dp_5"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

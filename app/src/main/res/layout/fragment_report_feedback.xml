@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    tools:context=".profile.fragment.ReportFeedbackFragment">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/space30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space15"
+            android:text="We want to know what you thought of your\nexperience at Dhopa so we'd love to your\nfeedback"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space10">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="@dimen/space10"
+                android:singleLine="true" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space10">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/space10"
+                android:singleLine="true" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space10">
+
+            <EditText
+                android:id="@+id/et_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="top"
+                android:hint="Type Your Query..."
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="8"
+                android:padding="@dimen/space10"
+                android:scrollbars="vertical" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendQuery"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="Send Feedback"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space50"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

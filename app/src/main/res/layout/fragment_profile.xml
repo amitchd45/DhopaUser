@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".profile.fragment.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_topProfileSection"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space100"
+                android:background="@color/appColor">
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="@dimen/space60"
+                        android:layout_height="@dimen/space60"
+                        android:src="@drawable/ic_launcher_background"/>
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_toRightOf="@id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amit Android"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chandigarh, mohali,"
+                            android:drawableLeft="@drawable/ic_pin_12dp"
+                            android:drawableTint="@color/white"
+                            android:drawablePadding="@dimen/dp_5"
+                            style="@style/TextAppearance.MaterialComponents.Caption"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_marginVertical="@dimen/space10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_account_info"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/account_info"
+                            android:drawableLeft="@drawable/ic_info"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_address"
+                            android:drawableLeft="@drawable/ic_pin__1"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_createPassword"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_password"
+                            android:drawableLeft="@drawable/ic_password"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_marginVertical="@dimen/space10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_reportFeedback"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Report &amp; Feedback"
+                            android:drawableLeft="@drawable/ic_report"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_refer"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/refer"
+                            android:drawableLeft="@drawable/ic_share"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/offers"
+                            android:drawableLeft="@drawable/sale"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+                        <TextView
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings"
+                            android:drawableLeft="@drawable/ic_settings"
+                            android:drawablePadding="@dimen/space8"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+                        <View
+                            android:layout_marginVertical="@dimen/dp_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space1"
+                            android:background="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/tv_logout"
+                            android:padding="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_on_off_button"
+                            android:drawablePadding="@dimen/space8"
+                            android:text="@string/signOut"
+                            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

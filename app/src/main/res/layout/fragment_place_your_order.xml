@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    tools:context=".home.fragments.PlaceYourOrderFragment">
+
+    <TextView
+        android:layout_margin="@dimen/space20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Options"
+        android:textColor="@color/black"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:background="@drawable/button_bg"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/space200"
+        android:layout_height="@dimen/space50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/space7"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle01"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_1"
+            app:tint="@color/appColor" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_office"
+        android:elevation="@dimen/space8"
+        android:layout_marginTop="@dimen/text20"
+        android:layout_below="@id/rl_home"
+        android:background="@drawable/button_bg_white"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/space200"
+        android:layout_height="@dimen/space50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:elevation="@dimen/space4"
+            android:layout_marginLeft="@dimen/space7"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle01"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/space8"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_office_building"
+            app:tint="@color/appColor" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_hotel"
+        android:elevation="@dimen/space8"
+        android:layout_marginTop="@dimen/text20"
+        android:layout_below="@id/rl_office"
+        android:background="@drawable/button_bg_white"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/space200"
+        android:layout_height="@dimen/space50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:elevation="@dimen/space4"
+            android:layout_marginLeft="@dimen/space7"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle01"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/space8"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_office_building"
+            app:tint="@color/appColor" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
